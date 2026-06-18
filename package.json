@@ -1,0 +1,12 @@
+{
+  "name": "syncfav-server",
+  "version": "1.0.0",
+  "description": "Self-hosted bookmark sync server for the SyncFav browser extension.",
+  "main": "syncfavserver.js",
+  "scripts": {
+    "start": "node syncfavserver.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
