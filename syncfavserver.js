@@ -14,9 +14,13 @@ if (!TOKEN) {
 
 app.use(express.json({ limit: '10mb' }));
 
-// Public health check
+// Public routes
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
+});
+
+app.get('/privacy', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'privacy.html'));
 });
 
 // Auth middleware for all routes below
